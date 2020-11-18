@@ -1,0 +1,59 @@
+.registermaster{
+    height: 100%;
+    padding: 0 2%;
+    background: linear-gradient(90deg, rgba(238,174,202,1) 39%, rgba(204,179,214,1) 62%, rgba(148,187,233,1) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 600px;
+}
+
+.register{
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: white;
+    -webkit-box-shadow: 2px 4px 23px 1px rgba(247,254,255,0.89); 
+box-shadow: 2px 4px 23px 1px rgba(247,254,255,0.89);
+}
+
+.register .form-group label{
+    font-size: 14px;
+}
+
+.register .form-group input{
+    font-size: 14px;
+}
+
+.register button{
+    margin-top: 10px;
+    background: linear-gradient(90deg, rgb(214, 157, 182) 39%, rgb(178, 157, 187) 62%, rgb(131, 166, 206) 100%);
+    color: white;
+    width: 100%;
+    display: block;
+    border: none;
+}
+
+.register button:hover{
+    color: white;
+    transform: scale(1.05);
+    transition: .2s;
+    font-size: 14px;
+}
+
+.tituloR{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tituloR img{
+    width: 60px;
+    padding: 0px;
+}
+
+.tituloR h2{
+    font-size: 18PX;
+}

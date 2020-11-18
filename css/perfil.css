@@ -1,0 +1,50 @@
+.perfilprincipal{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.perfil{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    padding: 40px 20px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 0 1em rgb(255, 255, 255);
+}
+
+.perfilimg{
+    width: 40%;
+    box-shadow: 0 0 1em rgb(236, 236, 236);
+    height: 400px;
+}
+
+.perfilform{
+    padding-left: 20px;
+    width: 60%;
+}
+
+.perfilform label{
+    font-size: 14px;
+}
+
+.perfilform button{
+    width: 100%;
+    background: rgb(238,174,202);
+    background: linear-gradient(90deg, rgba(238,174,202,1) 39%, rgba(204,179,214,1) 62%, rgba(148,187,233,1) 100%);
+    border: none;
+    color: aliceblue;
+    margin-top: 20px;
+}
+
+.perfilform button:hover{
+    border: none;
+    color: aliceblue;
+    transform: scale(1.05);
+    transition: .2s;
+}
+

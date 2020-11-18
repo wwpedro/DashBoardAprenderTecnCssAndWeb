@@ -1,0 +1,168 @@
+main{
+    display: block;
+    height: 100%;
+    background-color: white;
+    width: calc(100% - 300px);
+}
+
+main .maincontent{
+    padding: 30px;
+    width: 100%;
+    height: calc(100% - 90px); /*
+    pq a div quedra o layout qqinado cooca altua 100 por cendo pq o 
+    heaader ocupa 90 pixels , ai ora ficar td direitinho vc coloca 
+    a altura 100% menos header . ai o main vai caber na tela
+    */
+    overflow: auto /*
+    o conteudo fica dentro do content não quebra o layout, sem isso 
+    o layout quebra
+    */;
+    background: rgb(255,242,248);
+    background: linear-gradient(90deg, rgba(255,242,248,1) 71%, rgba(246,224,255,1) 91%, rgba(223,238,255,1) 100%);
+}
+
+.maincontenttitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.maincontent::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+.maincontent::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+.maincontent::-webkit-scrollbar-thumb
+{
+	background-color: rgba(220,190,232,1);
+	border: 0 5px solid rgb(223, 167, 245);
+}
+
+
+.maincontent .baner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.maincontent .banerrow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.baner-50{
+    width: 60%;
+}
+
+.banerrow button{
+    border: none;
+    height: 90px;
+    color: #F5F5F5;
+    background: linear-gradient(90deg, rgba(238,174,202,1) 39%, rgba(204,179,214,1) 62%, rgba(148,187,233,1) 100%);
+    font-size: 20px;
+}
+
+.banerrow button:hover{
+    border:none;
+    background-color: #F5F5F5;
+    transform: scale(1.05);
+    transition: .2s;
+}
+
+div#ajax-content{
+    width: 100%;
+    margin-top: 30px;
+    box-shadow: 0 0 1em rgb(255, 255, 255);
+    background-color: white;
+}
+
+div#ajax-content button{
+    color: #F5F5F5;
+    background: linear-gradient(90deg, rgba(238,174,202,1) 39%, rgba(204,179,214,1) 62%, rgba(148,187,233,1) 100%);
+}
+
+div#ajax-content button:hover{
+    border:none;
+    background-color: #F5F5F5;
+    transform: scale(1.05);
+    transition: .2s;
+}
+
+div#ajax-content label{
+    font-size: 14px;
+}
+
+
+div#ajax-content table svg{
+    cursor: pointer;
+}
+
+.conteudodinamico{
+    padding: 40px;
+}
+
+
+.dashboardcontent{
+    padding: 10px;
+}
+
+.dashboard-flex-parent{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.dashboard-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    max-width: 200px;
+    height: 200px;
+    background-color:white;
+}
+.dashboard-box:hover{
+    transition: 0.2s;
+    box-shadow: 0 0 2em rgb(219, 215, 215);
+    transform: scale(1.05);
+}
+
+.boxicone{
+    border-radius: 100%;/*faz circulo perfeito*/
+    margin-top: 30px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    /*abaixo vou centralizar o icone*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.boxicone svg{
+    font-size: 20px;
+}
+
+.boxconteudo{
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.boxtitulo{
+   margin-top: 15px; 
+}

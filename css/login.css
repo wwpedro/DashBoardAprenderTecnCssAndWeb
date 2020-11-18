@@ -1,0 +1,91 @@
+.login{
+    height: 100%;
+    display: flex;/*muito ultilizado*/
+    flex-direction: row;/*jeito que as divs vao se direcionar , no caso em linha*/
+}
+
+.loginform{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginformlog{
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.loginformlog button{
+    width: 100%;
+    background: rgb(238,174,202);
+    background: linear-gradient(90deg, rgba(238,174,202,1) 39%, rgba(204,179,214,1) 62%, rgba(148,187,233,1) 100%);
+    border: none;
+    color: aliceblue;
+    margin-top: 20px;
+}
+
+.loginformlog button:hover{
+    border: none;
+    color: aliceblue;
+    transform: scale(1.05);
+    transition: .2s;
+}
+
+.loginbanner{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginbanner img{
+    position: relative;
+    bottom: 40px;
+}
+
+.loginbanner h2{
+    position: relative;
+    bottom: 40px;
+}
+
+.logintitulo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*
+logo a baixo está o codigo parar regular tela quando diminuir , resposiva
+padrão do bootstrap pra mobile 991px(quebra a tela),
+quando for 1024 px pega onaer login ainda deixa 50% tira o padin e faz ela ocupar penos espaço
+e quando der 900px , o codigo some com a div da direita e a imagem vai embora
+a div da esquerda fica 100 porcento e a da direita apaga com none;
+*/
+@media screen and (max-width:1024px){
+    .loginbanner{
+        width: 50%;
+        padding: 0 2%;
+    }
+
+    .loginbanner img{
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width:900px){
+    .loginform{
+        width: 100%;
+    }
+    .loginbanner{
+        display: none;
+    }
+}

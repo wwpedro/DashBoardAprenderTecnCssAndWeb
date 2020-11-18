@@ -1,0 +1,12 @@
+@import "fontes.css";
+@import "reste.css";
+@import "login.css";
+@import "register.css";
+@import "sidebar.css";
+@import "header.css";
+@import "main.css";
+@import "perfil.css";
+/*
+neste arquivo vou referenciar outros arquivos css que eu vou ter
+para organizar e separar , assim a manutenção do código será melhor efetuada
+*/

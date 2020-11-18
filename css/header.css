@@ -1,0 +1,57 @@
+.flexdashboard header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+    background-color:#E1CBF5;
+    padding: 0 40px;
+}
+
+.flexdashboard header a{
+    text-decoration: none;
+    color: blueviolet;
+}
+
+.flexdashboard header a > svg{
+    /*
+    svg  é como o navegador tranformaa a tag "i" porem se não tranformasse
+    vc ia colocar i , de forma normal. e o sinal de > é pra pagar oq tem extamente dentro
+    de i mas sem > iria funcionar do mesmo jeito
+    */
+    color: violet;
+}
+
+.flexdashboard header a:hover{
+    color: 	#490b75;
+}
+
+div.sidemenu{
+    padding-top: 30px;
+}
+
+div.sidemenu ul{
+    list-style-type: none;
+}
+
+div.sidemenu ul li{
+    color: darkviolet;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 20px;
+}
+div.sidemenu ul li a{
+    margin-left: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: darkorchid;
+}
+div.sidemenu ul li a:hover{
+    color: 	#490b75;
+}
+
+
+

@@ -1,0 +1,21 @@
+/*
+neste arquivo vou fazer o reset padrão das configurações do meu navegador
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;/*todos elementes quando adiciona amarging ou padding, os elementos não mudem o tamanho, e o asteristico significa que paga tds os elemnentos da pagina*/
+    font-family: 'PTMono';
+}
+
+html, body{
+    height: 100%;/*
+    faço isso pois se eu for trabalhar com porcentagem, a altura só vai ser valida se o 
+    elentemonto pai estiver definido. 
+    */
+}
+
+body{
+    background-color:rgb(219, 150, 150);
+}

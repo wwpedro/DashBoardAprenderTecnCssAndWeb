@@ -1,0 +1,35 @@
+.flexdashboard{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+}
+
+sidebar{
+    padding-top: 30px;
+    display: block;
+    height: 100%;
+    width: 300px;
+    background-color: #E1CBF5;
+}
+
+sidebar .sidetitle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    padding: 30px 30px;
+}
+
+sidebar .sidetitle img{
+    width: 70px;
+}
+
+sidebar .sidetitle h3{
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+
+
